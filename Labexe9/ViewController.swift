@@ -3,7 +3,7 @@
 //  Labexe9
 //
 //  Created by kevin bhangu on 2025-03-21.
-//
+///
 
 import UIKit
 import MapKit
@@ -120,12 +120,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
             directions.calculate { response, error in
                 if let route = response?.routes.first {
                     self.mapView.addOverlay(route.polyline)
-                    self.overlays.append(route.polyline)
+                    self.ovefrlays.append(route.polyline)
                 }
             }
         }
     }
 }
+
 
 
 
