@@ -120,7 +120,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             directions.calculate { response, error in
                 if let route = response?.routes.first {
                     self.mapView.addOverlay(route.polyline)
-                    self.overfrlays.append(route.polyline)
+                    self.overlays.append(route.polyline)
                 }
             }
         }
